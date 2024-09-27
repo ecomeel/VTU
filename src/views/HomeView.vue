@@ -5,14 +5,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue, Options } from "vue-class-component";
+<script setup lang="ts">
 import TodoApp from "@/components/TodoApp.vue";
-
-@Options({
-  components: {
-    TodoApp,
-  },
-})
-export default class HomeView extends Vue {}
 </script>

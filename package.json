@@ -40,7 +40,8 @@
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "ts-jest": "^27.0.4",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,
@@ -56,8 +57,7 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {
-    },
+    "rules": {},
     "overrides": [
       {
         "files": [
