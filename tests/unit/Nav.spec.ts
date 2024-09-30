@@ -1,7 +1,6 @@
 import { mount } from "@vue/test-utils";
 import NavBar from "@/components/NavBar.vue";
 
-// describe('NavBar.vue', () => {
 test("is profile link rendered", () => {
   const wrapper = mount(NavBar);
 
@@ -9,8 +8,8 @@ test("is profile link rendered", () => {
 
   expect(profileLink.text()).toEqual("Profile");
 });
-// })
 
+// NOTE: Содержится ли элемент в DOM
 test("doesn't redner ad admin link", () => {
   const wrapper = mount(NavBar);
 
@@ -25,4 +24,11 @@ test("renders an admin link", () => {
   });
 
   expect(wrapper.get("#admin").text()).toEqual("Admin");
+});
+
+// NOTE: Спрятан ли элемент
+test("doesn't show some link", () => {
+  const wrapper = mount(NavBar);
+
+  expect(wrapper.get("#hidden-link").isVisible()).toBeFalsy();
 });

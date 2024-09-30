@@ -4,6 +4,8 @@
     <router-link to="/about">About</router-link>
     <router-link id="profile" to="/profile">Profile</router-link>
     <router-link v-if="admin" id="admin" to="/admin">Admin</router-link>
+
+    <a hidden id="hidden-link">Hidden content</a>
   </nav>
 </template>
 
