@@ -1,21 +1,21 @@
 <template>
-<div>
-  <form @submit.prevent="handleSubmit">
-    <input v-model="username" data-username >
-    <input type="submit" >
-  </form>
-  <div v-if="submitted" class="message">
-    Thanks for your message, {{ username }}
+  <div>
+    <form @submit.prevent="handleSubmit">
+      <input v-model="username" data-username />
+      <input type="submit" />
+    </form>
+    <div v-if="submitted" class="message">
+      Thanks for your message, {{ username }}
+    </div>
   </div>
-</div>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 
-const username = ref('')
-const submitted = ref(false)
+const username = ref("");
+const submitted = ref(false);
 
 function handleSubmit() {
-  submitted.value = true
+  submitted.value = true;
 }
 </script>
