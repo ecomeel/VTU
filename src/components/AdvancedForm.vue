@@ -45,5 +45,9 @@ function submit() {
   emit("submit", form.value);
 }
 
-console.log("some-fixes");
+const a = 10;
+console.log({
+  a: a,
+  b: 16,
+});
 </script>
