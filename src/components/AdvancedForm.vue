@@ -44,10 +44,4 @@ const form = ref<IForm>({
 function submit() {
   emit("submit", form.value);
 }
-
-const a = 10;
-console.log({
-  a: a,
-  b: 16,
-});
 </script>
